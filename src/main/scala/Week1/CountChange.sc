@@ -1,6 +1,5 @@
 def countChange(money: Int, coins: List[Int]): Int = countChangeTail(money, coins)
 def countChangeTail(money: Int, coins: List[Int]): Int = {
-
   def helper(remaining: Int, remainingCoins: List[Int], combinations: Int): Int ={
     if (remainingCoins.isEmpty) combinations
     else {
@@ -14,12 +13,8 @@ def countChangeTail(money: Int, coins: List[Int]): Int = {
   }
   val sortedCoins = coins.sortWith(_ > _)
   helper(money, sortedCoins, 0)
-
 }
-
-
 def countChangeRec(money: Int, coins: List[Int]): Int = {
-
   def helper(remaining: Int, remainingCoins: List[Int]): Int ={
     if (remainingCoins.isEmpty) 0
     else {
