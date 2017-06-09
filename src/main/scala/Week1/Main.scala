@@ -49,7 +49,7 @@ object Main extends App {
 
   }
 
-  println(countChange(4, List(2,1)))
+  println(countChange(100, List(100, 50, 20, 10, 5, 2,1)))
   println(countChange(4, List(5,2,1)))
   println(countChange(4, List(1)))
 
